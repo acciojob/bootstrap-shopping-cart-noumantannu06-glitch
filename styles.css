@@ -1,6 +1,4 @@
-/*  your css code here. If applicable */
- <style>
-        .headings { color: #3b99e0; }
+  .headings { color: #3b99e0; }
         .summary { 
             background-color: #f7fbff; 
             border-top: 3px solid #5ea4f3; 
@@ -16,4 +14,3 @@
             padding: 12px; 
             font-weight: bold;
         }
-    </style>
