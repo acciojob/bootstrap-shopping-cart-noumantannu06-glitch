@@ -4,10 +4,97 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container py-5">
+        <!-- Block Heading -->
+        <h2 class="block-heading headings">YOUR CART</h2>
+
+        <div class="row">
+            <!-- Products Column (col-lg-8) -->
+            <div class="col-lg-8">
+                <!-- Product Block 1 -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Product 1">
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Vivo- V-40</h5>
+                             <p class="mb-2">Display:5 inches</p>
+                            <p class="mb-2">RAM:4GB</p>
+                            <p class="mb-2">Memory:32GB</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <strong>$29.99</strong>
+                                </div>
+                                <div class="col-4">
+                                    <input type="number" class="form-control" value="1" min="1">
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-danger btn-sm">Quantity</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Block 2 -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbK_VFmBMyC3uZGuJ1EKqBShVa7sNmUbQshg&s" class="img-fluid" alt="Product 2">
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Samsung S24 </h5>
+                            <p class="mb-2">Display:5 inches</p>
+                            <p class="mb-2">RAM:4GB</p>
+                            <p class="mb-2">Memory:32GB</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <strong>$45.50</strong>
+                                </div>
+                                <div class="col-4">
+                                    <input type="number" class="form-control" value="2" min="1">
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-danger btn-sm">Quantity</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Column (col-lg-4) -->
+            <div class="col-lg-4">
+                <div class="summary sticky-top">
+                    <h5>Order Summary</h5>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <strong>$75.49</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Discount:</span>
+                        <strong>$0.00</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Shipping:</span>
+                        <strong>$0.00</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="font-weight-bold">Total:</span>
+                        <strong class="font-weight-bold">$80.49</strong>
+                    </div>
+                    <button class="btn btn-primary summary-btn text-white">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
